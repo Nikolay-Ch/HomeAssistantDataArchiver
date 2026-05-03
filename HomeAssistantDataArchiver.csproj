@@ -10,10 +10,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Include="Properties\ClickHouseOptions.cs" />
-  </ItemGroup>
-
-  <ItemGroup>
     <PackageReference Include="ClickHouse.Client" Version="7.14.0" />
     <PackageReference Include="Microsoft.Extensions.Hosting" Version="9.0.11" />
     <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.22.1" />
