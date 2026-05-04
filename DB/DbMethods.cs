@@ -189,7 +189,7 @@ public class DbMethods(
             case HomeAssistantTableType.State:
                 double ts = (double)row["last_updated_ts"]!;
                 string entityId = (string?)row["entity_id"] ?? "unknown";
-                var state = (string?)row["state"];
+                var state = row["state"] is DBNull ? "" : (string?)row["state"];
                 string attrs = (string?)row["shared_attrs"] ?? "{}";
 
                 var (type, val) = ParseState(state, Culture);
